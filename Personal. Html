@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Be My queen 🌸</title>
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    margin-top: 40px;
+    background: rgba(255, 240, 245, 0.8);
+    display: inline-block;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 18px;
+    margin: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h1{
+  color:blue;
+}
+
+#yes {
+    background: green;
+    color: white;
+}
+
+#no {
+    background: red;
+    color: white;
+    position: absolute;
+}
+
+/* YouTube video style */
+iframe {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Will you be my queen? Miss NANDHU.. 💕</h1>
+
+<!-- Your YouTube Video -->
+<iframe 
+  width="360" 
+  height="200"
+  src="https://www.youtube.com/embed/tDYbwCEMD94"
+  frameborder="0"
+  allow="autoplay; encrypted-media"
+  allowfullscreen>
+</iframe>
+
+<br><br>
+
+<button id="yes" onclick="sayYes()">Yes 💖</button>
+<button id="no" onmouseover="runAway()">No 💔</button>
+
+<h2 id="message"></h2>
+</div>
+
+<script>
+function sayYes() {
+    document.getElementById("message").innerHTML = 
+    "Yah! You are my queen 🌸💘 నా కలలలో నిలిచే అందమైన స్వప్నం నువ్వే; మాటలేకుండానే నా హృదయాన్ని నవ్వించే మాధుర్యం నువ్వే. Living with you is my dream, and I will do my best to make it come true.";
+}
+
+function runAway() {
+    let noButton = document.getElementById("no");
+    let x = Math.random() * (window.innerWidth - 150);
+    let y = Math.random() * (window.innerHeight - 100);
+    noButton.style.left = x + "px";
+    noButton.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
